@@ -9,29 +9,38 @@
 </head>
 <body>
     <section class="component">
+
+        <div class="content">
+
+            <form class="data_input">
+                <fieldset class="fields">
+                    <label for="inDay" class="tag_input">DAY</label>
+                    <input id="inDay" name="day" type="text" class="field">
+                    <span class="message_error">This field is required</span>
+                </fieldset>
+                <fieldset class="fields">
+                    <label for="inMonth" class="tag_input">MONTH</label>
+                    <input id="inMonth" name="month" type="text" class="field">
+                    <span class="message_error">This field is required</span>
+                </fieldset>
+                <fieldset class="fields">
+                    <label for="inYear" class="tag_input">YEAR</label>
+                    <input id="inYear" name="year" type="text" class="field">
+                    <span class="message_error">This field is required</span>
+                </fieldset>
+            </form>
         
-        <div class="data_input">
-            <fieldset class="fields">
-                <label for="" class="tag_input"></label>
-                <input type="text" class="field">
-            </fieldset>
-            <fieldset class="fields">
-                <label for="" class="tag_input"></label>
-                <input type="text" class="field">
-            </fieldset>
-            <fieldset class="fields">
-                <label for="" class="tag_input"></label>
-                <input type="text" class="field">
-            </fieldset>
+            <hr/>
+    
+            <div class="result">
+                <p class="result_title"><span id="outYear">--</span> years</p>
+                <p class="result_title"><span id="outMonth">--</span> months</p>
+                <p class="result_title"><span id="outDay">--</span> days</p>
+            </div>
+
         </div>
 
-        <br class="line">
-
-        <div class="result">
-            <p class="result_title"><span></span></p>
-            <p class="result_title"><span></span></p>
-            <p class="result_title"><span></span></p>
-        </div>
     </section>
+    <script src="./js/main.js"></script>
 </body>
 </html>
