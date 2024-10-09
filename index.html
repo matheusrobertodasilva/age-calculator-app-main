@@ -11,34 +11,35 @@
     <main>
         <section>
             <article class="content">
-                <form >
-                    <label>
+                <form class="form">
+                    <label class="field">
                         <span class="form__label">day</span>
-                        <input class="form__input" type="text">
+                        <input id="inDay" class="form__input" type="text" placeholder="DD">
                         <span id="msgDay"></span>
                     </label>
-                    <label>
+                    <label class="field">
                         <span class="form__label">month</span>
-                        <input class="form__input" type="text">
+                        <input id="inMonth" class="form__input" type="text" placeholder="MM">
                         <span id="msgMonth"></span>
                     </label>
-                    <label>
+                    <label class="field">
                         <span class="form__label">year</span>
-                        <input class="form__input" type="text">
+                        <input id="inYear" class="form__input" type="text" placeholder="YYYY">
                         <span id="msgYear"></span>
                     </label>
                 </form>
                 <div class="toutch">
                     <div class="toutch__line"></div>
-                    <button class="toutch__btn"><img class="toutch__img" src="" alt=""></button>
+                    <button id="btn" class="toutch__btn"><img class="toutch__img" src="./assets/img/icon-arrow.svg" alt=""></button>
                 </div>
                 <div class="output">
-                    <h4 class="output__title"><span id="outAge">-- </span>age</h4>
+                    <h4 class="output__title"><span id="outAge">-- </span>years</h4>
                     <h4 class="output__title"><span id="outMonths">-- </span>months</h4>
                     <h4 class="output__title"><span id="outDays">-- </span>days</h4>
                 </div>
             </article>
         </section>
     </main>
+    <script src="./index.js"></script>
 </body>
 </html>
