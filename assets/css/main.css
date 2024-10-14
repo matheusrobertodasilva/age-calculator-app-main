@@ -28,6 +28,7 @@ body{
 section{
 
 }
+
 .content{
     background-color: var(--White);
     padding: 4rem 1rem 2rem 1rem;
@@ -37,8 +38,7 @@ section{
     .form{
         width: 100%;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between; 
 
         .field{
             width: 50%;
@@ -46,13 +46,21 @@ section{
             flex-direction: column;
             /* margin-left: 1rem; */
 
+            .form__label--active{
+                color: var(--Light-red) !important; 
+            }
+
             .form__label{
                 text-transform: uppercase;
                 color: var(--Smokey-grey);
                 font-size: 0.8rem;
-                font-weight: 700;
+                font-weight: 600;
             }
-                
+            
+            .form__input--active{
+                border-color: var(--Light-red) !important;
+            }
+
             .form__input{
                 width: 40%;
                 /* height: 2.5rem; */
