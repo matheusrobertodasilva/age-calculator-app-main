@@ -102,13 +102,16 @@ function calcularIdade(){
         let anoAtual = dataAtual.getFullYear();
 
         let idade = anoAtual - year;
-        let meses = mesAtual - month;
-        let dias = Math.abs(diaAtual - day);
+        let meses = Math.abs(mesAtual - month);
+        let dias = 30 - Math.abs(diaAtual - day);
 
-        if(dias == 0 && meses == 0){
+        if(diaAtual == day && mesAtual == mes){
             idade++
-        } else if(dias == 0 ){
+        } else if(diaAtual == day){
+            dias = 0
             meses++
+        } else {
+            meses--
         }
 
         //Saida de dados 
