@@ -57,7 +57,7 @@ function verificaCampo(day,month,year){
     } else{
         msgMonth.innerHTML = null;
     }
-    if(year > 2024 || year == "" || isNaN(year)){
+    if(year >= anoAtual || year == "" || isNaN(year)){
         msgYear.innerHTML = "Must be in the past";
     } else {
         msgYear.innerHTML = null;
@@ -65,7 +65,7 @@ function verificaCampo(day,month,year){
 
     let retorna = null;
 
-    if(msgDay.innerHTML == "" || msgMonth.innerHTML == "" || msgYear.innerHTML == ""){
+    if(msgDay.innerHTML == "" && msgMonth.innerHTML == "" && msgYear.innerHTML == ""){
         input.forEach((element,i) => {
             element.classList.remove("form__input--active");
             formLabel[i].classList.remove("form__label--active"); 
