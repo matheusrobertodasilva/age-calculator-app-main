@@ -57,7 +57,7 @@ function verificaCampo(day,month,year){
     } else{
         msgMonth.innerHTML = null;
     }
-    if(year >= anoAtual || year == "" || isNaN(year)){
+    if(year >= 2024 || year == "" || isNaN(year)){
         msgYear.innerHTML = "Must be in the past";
     } else {
         msgYear.innerHTML = null;
@@ -105,7 +105,7 @@ function calcularIdade(){
         let meses = Math.abs(mesAtual - month);
         let dias = 30 - Math.abs(diaAtual - day);
 
-        if(diaAtual == day && mesAtual == mes){
+        if(diaAtual == day && mesAtual == month){
             idade++
         } else if(diaAtual == day){
             dias = 0
